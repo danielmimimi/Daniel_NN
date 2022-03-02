@@ -39,7 +39,7 @@ call setx PIPENV_MAX_DEPTH 100
 call setx PIPENV_VENV_IN_PROJECT 1
 
 echo ^> Create and clean (uninstall not needed packages) environment in .venv from Pipfile.lock
-pipenv install --ignore-pipfile
+pipenv install
 pipenv clean
 
 if %ERRORLEVEL% NEQ 0 (
